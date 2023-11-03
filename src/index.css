@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  background-color: #e7e8ee;
+}
+
+
+.logo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.topbar {
+  position: fixed;
+  height: 5rem;
+  z-index: 997;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: var(--surface-card);
+  transition: left .2s;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .02), 0 0 2px rgba(0, 0, 0, .05), 0 1px 4px rgba(0, 0, 0, .08);
+}
+
+.topbar-menu-item {
+  padding: 5px;
+}
+
+.top-bar-left-section {
+  display: flex;
+  /* Allows line below to have meaning */
+  flex-direction: row;
+  /* allows items to be stacked next to each other*/
+  width: 210px;
+  align-items: baseline;
+}
+
+.top-bar-middle-section {
+  background-color: brown;
+  flex: 1;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.top-bar-right-section {
+  background-color: coral;
+  width: 150px;
+}
+
+/* Basic styling for the sidebar */
+.sidebar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: calc(100vh - 9rem);
+  z-index: 999;
+  overflow-y: auto;
+  top: 6rem;
+  left: 22px;
+  transition: transform .2s, left .2s;
+  background-color: var(--surface-overlay);
+  border-radius: 12px;
+  /*padding: 0.5rem 1.5rem;*/
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .02), 0 0 2px rgba(0, 0, 0, .05), 0 1px 4px rgba(0, 0, 0, .08);
+}
+
+
+.sidebar.myhidden {
+  transform: translateX(-100%);
+}
+
+.sidebar-ul-element {
+  padding-left: 0px;
+  list-style-type: none;
+  width: 100%;
+}
+
+
+.sidebar-menue-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+  outline: 0 none;
+  color: var(--text-color);
+  cursor: pointer;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+
+
+  transition: background-color .2s, box-shadow .2s;
+  font-size: small;
+  justify-content: center;
+
+}
+
+.sidebar-menue-item:hover {
+  background-color: #e5e6fc;
+}
+
+.sidebar-menue-item.clicked {
+  background-color: #e5e6fc;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  padding: 95px 32px 32px 224px;
+  transition: margin-left .2s;
+}
+
+
+.content.myhidden {
+  margin-left: -150px;
+}

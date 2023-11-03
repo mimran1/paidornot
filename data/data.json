@@ -1,0 +1,148 @@
+{
+  "userdata": [
+    {
+      "id": 1,
+      "name": "Imran",
+      "isPaid": true,
+      "amount": 10,
+      "year": 2023,
+      "quarter": "Q1"
+    },
+    {
+      "id": 2,
+      "name": "Anam",
+      "isPaid": true,
+      "amount": 110,
+      "year": 2023,
+      "quarter": "Q1"
+    },
+    {
+      "id": 3,
+      "name": "Jami",
+      "isPaid": true,
+      "amount": 10,
+      "year": 2023,
+      "quarter": "Q1"
+    },
+    {
+      "id": 4,
+      "name": "Imran",
+      "isPaid": true,
+      "amount": 100,
+      "year": 2023,
+      "quarter": "Q2"
+    },
+    {
+      "id": 5,
+      "name": "Anam",
+      "isPaid": true,
+      "amount": 110,
+      "year": 2023,
+      "quarter": "Q2"
+    },
+    {
+      "id": 6,
+      "name": "Jami",
+      "isPaid": false,
+      "amount": 120,
+      "year": 2023,
+      "quarter": "Q2"
+    },
+    {
+      "id": 7,
+      "name": "Imran",
+      "isPaid": true,
+      "amount": 30,
+      "year": 2023,
+      "quarter": "Q3"
+    },
+    {
+      "id": 8,
+      "name": "Anam",
+      "isPaid": true,
+      "amount": 30,
+      "year": 2023,
+      "quarter": "Q3"
+    },
+    {
+      "id": 9,
+      "name": "Jami",
+      "isPaid": true,
+      "amount": 3000,
+      "year": 2023,
+      "quarter": "Q3"
+    },
+    {
+      "id": 10,
+      "name": "Imran",
+      "isPaid": true,
+      "amount": 0,
+      "year": 2022,
+      "quarter": "Q1"
+    },
+    {
+      "id": 11,
+      "name": "Anam",
+      "isPaid": true,
+      "amount": 100,
+      "year": 2022,
+      "quarter": "Q1"
+    },
+    {
+      "id": 12,
+      "name": "Jami",
+      "isPaid": true,
+      "amount": 1000,
+      "year": 2022,
+      "quarter": "Q1"
+    },
+    {
+      "id": 13,
+      "name": "Imran",
+      "isPaid": true,
+      "amount": 1100,
+      "year": 2022,
+      "quarter": "Q2"
+    },
+    {
+      "id": 14,
+      "name": "Anam",
+      "isPaid": true,
+      "amount": 10,
+      "year": 2022,
+      "quarter": "Q2"
+    },
+    {
+      "id": 15,
+      "name": "Jami",
+      "isPaid": false,
+      "amount": 0,
+      "year": 2022,
+      "quarter": "Q2"
+    },
+    {
+      "id": 16,
+      "name": "Imran",
+      "isPaid": true,
+      "amount": 300,
+      "year": 2022,
+      "quarter": "Q3"
+    },
+    {
+      "id": 17,
+      "name": "Anam",
+      "isPaid": true,
+      "amount": 60,
+      "year": 2022,
+      "quarter": "Q3"
+    },
+    {
+      "id": 18,
+      "name": "Jami",
+      "isPaid": true,
+      "amount": 990,
+      "year": 2022,
+      "quarter": "Q3"
+    }
+  ]
+}
