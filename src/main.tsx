@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import './index.css'
+import './index.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //PrimeReact Imports below
 import { PrimeReactProvider } from 'primereact/api';
@@ -11,9 +12,13 @@ import 'primeicons/primeicons.css';
 import 'primereact/resources/primereact.css';                       // core css
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  
-        <PrimeReactProvider>
-            <App />
-        </PrimeReactProvider>
-  
+
+    <PrimeReactProvider>
+        <Router>
+            <Routes>
+                <Route path="/*" element={<App />} />
+            </Routes>
+        </Router>
+    </PrimeReactProvider>
+
 )

@@ -14,7 +14,7 @@ const MyChart = ({ userData }: MyChartProps) => {
     const { dbUpdate } = useContext(DataContext);
 
     useEffect(() => {
-        console.log('Rendering MyChart')
+        
         setChart();
     }, [dbUpdate]);
 

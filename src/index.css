@@ -9,6 +9,7 @@ body {
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .topbar {
@@ -33,10 +34,10 @@ body {
 }
 
 .top-bar-left-section {
+  /* Pre-req for flex direction */
   display: flex;
-  /* Allows line below to have meaning */
-  flex-direction: row;
   /* allows items to be stacked next to each other*/
+  flex-direction: row;
   width: 210px;
   align-items: baseline;
 }
@@ -49,8 +50,20 @@ body {
 }
 
 .top-bar-right-section {
-  background-color: coral;
+  /*background-color: coral;*/
+  display: flex;
   width: 150px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.current-user-display-name {
+  font-size: small;
+}
+
+.current-user-profile-pic {
+  width: 40px;
+  height: 40px;
 }
 
 /* Basic styling for the sidebar */

@@ -6,19 +6,27 @@ import DataContext, { DataProvider } from './context/DataContext'
 import Home from './pages/Home'
 import MainContent from './components/MainContent'
 import { SideBarProvider } from './context/SideBarContext'
+import { Route, Routes } from 'react-router-dom';
+import Missing from './pages/Missing'
+import Layout from './components/Layout'
+import YearOverYear from './pages/YearOverYear'
+import Login from './pages/Login'
+import Register from './components/Register'
+
 
 
 function App() {
 
   return (
-    <DataProvider>
-      <SideBarProvider>
-        <TopNav />
-        <SideNav />
-        <MainContent />
-      </SideBarProvider>
-    </DataProvider>
-
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='/yearoveryear' element={<YearOverYear />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='*' element={<Missing />} />
+      </Route>
+      <Route path='/login' element={<Login />} />
+    </Routes>
   )
 }
 
