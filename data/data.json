@@ -36,7 +36,7 @@
       "id": 5,
       "name": "Anam",
       "isPaid": true,
-      "amount": 110,
+      "amount": 120,
       "year": 2023,
       "quarter": "Q2"
     },
@@ -68,7 +68,7 @@
       "id": 9,
       "name": "Jami",
       "isPaid": true,
-      "amount": 3000,
+      "amount": 3,
       "year": 2023,
       "quarter": "Q3"
     },
@@ -92,7 +92,7 @@
       "id": 12,
       "name": "Jami",
       "isPaid": true,
-      "amount": 1000,
+      "amount": 10,
       "year": 2022,
       "quarter": "Q1"
     },
@@ -100,7 +100,7 @@
       "id": 13,
       "name": "Imran",
       "isPaid": true,
-      "amount": 1100,
+      "amount": 11,
       "year": 2022,
       "quarter": "Q2"
     },

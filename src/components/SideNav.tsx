@@ -8,11 +8,8 @@ interface ActiveTracker {
 }
 
 const SideNav = () => {
-    const { isSideBarHidden } = useContext(SideBarContext);
-    const [activeItem, setActiveItem] = useState(localStorage.getItem('activeItem') || '');
+    const { isSideBarHidden, activeSideBarItem, setActiveSideBarItem } = useContext(SideBarContext);
     const navigate = useNavigate();
-    console.log('sidenave')
-    console.log(activeItem);
     const [activeTracker, setActiveTracker] = useState<ActiveTracker[]>([
         { key: 1, isActive: false },
         { key: 2, isActive: false }
@@ -22,11 +19,11 @@ const SideNav = () => {
     const handleClick3 = (item: string) => {
         const newItem = item;
 
-        setActiveItem(item);
+        
         localStorage.setItem('activeItem',item);
-        if (newItem === 'item1')
+        if (newItem === 'yearoveryear')
             navigate('/yearoveryear');
-        else if(newItem === 'item2')
+        else if(newItem === 'register')
             navigate('/register');
         else
             navigate('/login');
@@ -36,13 +33,13 @@ const SideNav = () => {
         <div className={`sidebar ${isSideBarHidden ? 'myhidden' : ''}`}>
             <ul className='sidebar-ul-element'>
 
-                <li className={`sidebar-menue-item ${activeItem === 'item1' ? 'clicked' : ''}`} onClick={() => handleClick3("item1")}>
+                <li className={`sidebar-menue-item ${activeSideBarItem === 'yearoveryear' ? 'clicked' : ''}`} onClick={() => handleClick3("yearoveryear")}>
                     Year over Year
                 </li>
-                <li className={`sidebar-menue-item ${activeItem === 'item2' ? 'clicked' : ''}`} onClick={() => handleClick3("item2")}>
+                <li className={`sidebar-menue-item ${activeSideBarItem === 'register' ? 'clicked' : ''}`} onClick={() => handleClick3("register")}>
                     Register
                 </li>
-                <li className={`sidebar-menue-item ${activeItem === 'item3' ? 'clicked' : ''}`} onClick={() => handleClick3("item3")}>
+                <li className={`sidebar-menue-item ${activeSideBarItem === 'login' ? 'clicked' : ''}`} onClick={() => handleClick3("item3")}>
                     Login
                 </li>
 

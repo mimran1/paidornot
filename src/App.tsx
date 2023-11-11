@@ -4,14 +4,13 @@ import SideNav from './components/SideNav'
 import TopNav from './components/TopNav'
 import DataContext, { DataProvider } from './context/DataContext'
 import Home from './pages/Home'
-import MainContent from './components/MainContent'
 import { SideBarProvider } from './context/SideBarContext'
 import { Route, Routes } from 'react-router-dom';
 import Missing from './pages/Missing'
 import Layout from './components/Layout'
 import YearOverYear from './pages/YearOverYear'
 import Login from './pages/Login'
-import Register from './components/Register'
+import Register from './pages/Register'
 
 
 

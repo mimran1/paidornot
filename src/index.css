@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: #e7e8ee;
+  
 }
 
 
@@ -43,7 +43,7 @@ body {
 }
 
 .top-bar-middle-section {
-  background-color: brown;
+  /*background-color: brown;*/
   flex: 1;
   margin-left: 40px;
   margin-right: 40px;
@@ -55,6 +55,40 @@ body {
   width: 150px;
   justify-content: flex-end;
   align-items: center;
+}
+
+
+.drop-down-menu {
+    display: none;
+    width: 100px;
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.drop-down-menu.show {
+  display: block;
+}
+
+.drop-down-ul {
+  padding: 5px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.drop-down-menu ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.drop-down-menu i {
+  padding: 5px;
+}
+
+.drop-down-menu ul li:hover {
+  background-color: #ddd;
+  border-radius: 4px;
 }
 
 .current-user-display-name {
