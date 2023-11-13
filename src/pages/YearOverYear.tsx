@@ -57,7 +57,7 @@ const YearOverYear = () => {
   }, []);
 
   return (
-    <Card title="Year over Year analysis">
+    <Card title="Year over Year Analysis">
 <Chart id='pleasework' type="bar" data={chartData} options={chartOptions} style={{ width: '100%', height: '280px' }} />
     </Card>
   )
