@@ -62,8 +62,10 @@ body {
     display: none;
     width: 100px;
     position: absolute;
-    background-color: whitesmoke;
+    background-color: var(--surface-card);
     border-radius: 8px;
+    border: 5px;
+    border-color: black;
     cursor: pointer;
 }
 
@@ -87,7 +89,7 @@ body {
 }
 
 .drop-down-menu ul li:hover {
-  background-color: #ddd;
+  background-color: #777777;
   border-radius: 4px;
 }
 
@@ -143,19 +145,19 @@ body {
   border-radius: 4px;
 
 
-  transition: background-color .2s, box-shadow .2s;
+  transition: background-color .6s, box-shadow .2s;
   font-size: small;
   justify-content: center;
 
 }
 
 .sidebar-menue-item:hover {
-  background-color: #e5e6fc;
+  background-color: var(--indigo-50);
 }
 
 .sidebar-menue-item.clicked {
-  background-color: #e5e6fc;
-  font-weight: bold;
+  background-color: var(--indigo-400);
+  font-weight: 400;
 }
 
 .content {

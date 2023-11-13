@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 import SideBarContext from '../context/SideBarContext';
 import { Link, Navigate, useHref, useNavigate, useParams } from 'react-router-dom';
 import { PrimeReactContext } from 'primereact/api';
+import { Dropdown } from 'primereact/dropdown';
 
 const TopNav = () => {
 
@@ -11,6 +12,8 @@ const TopNav = () => {
     const [isDrpDwnShown, setIsDrpDwnShown] = useState(false);
     const drpDwnRef = useRef<HTMLElement>(null);
     const { changeTheme } = useContext(PrimeReactContext);
+    const themeOptions = [{ theme: "Light" }, { theme: "Dark" }];
+    const [selectedThemeOption, setSelectedThemeOption] = useState("Light");
 
     //Hide/show drop down menu item when clicking anywhere on screen OUTSIDE the drpdwn menu item iteself.
     useEffect(() => {
@@ -49,9 +52,7 @@ const TopNav = () => {
                 </div>
             </div>
             <div className='top-bar-middle-section'>
-                <div className='topbar-menu-item'>
 
-                </div>
             </div>
             <div className='top-bar-right-section'>
                 <div className='topbar-menu-item'>
@@ -64,8 +65,12 @@ const TopNav = () => {
                             </ul>
                         </div>
                     </div>
-
                 </div>
+                <div className='topbar-menu-item'>
+                    {/*   <Dropdown value={selectedThemeOption} onChange={(e) => setSelectedThemeOption(e.value)} options={themeOptions} optionLabel="theme"
+                        placeholder="Theme" className="w-full md:w-14rem" />
+                        */
+                    }</div>
                 <div className='topbar-menu-item'>
                     <span className='current-user-display-name'>Welcome Mohammad!</span>
                 </div>
